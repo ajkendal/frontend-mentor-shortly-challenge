@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+// Colors
+$color-body: #ffffff;
+$color-footer: #34313d;
+$color-purple-1: #3a3054;
+$color-purple-2: #4b3f6b;
+$color-grey-1: #9e9aa8;
+$color-grey-2: #eff1f7;
+$color-teal-1: #2bd0d0;
+$color-teal-2: #9ae3e3;
+
+// Breakpoints
+$xsBreakpoint: 576px;
+$smBreakpoint: 768px;
+$mdBreakpoint: 1024px;
+$lgBreakpoint: 1290px;
+$xlBreakpoint: 1440px;
+
+@mixin xs-breakpoint {
+  @media only screen and (max-width: $xsBreakpoint) {
+    @content;
+  }
+}
+
+@mixin sm-breakpoint {
+  @media only screen and (max-width: $smBreakpoint) {
+    @content;
+  }
+}
+
+@mixin md-breakpoint {
+  @media only screen and (max-width: $mdBreakpoint) {
+    @content;
+  }
+}
+
+@mixin lg-breakpoint {
+  @media only screen and (max-width: $lgBreakpoint) {
+    @content;
+  }
+}
+
+@mixin xl-breakpoint {
+  @media only screen and (max-width: $xlBreakpoint) {
+    @content;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: $color-body;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  background-color: $color-teal-1;
+  color: $color-body;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 30px;
+  letter-spacing: 0;
+  line-height: auto;
+  &:hover {
+    background-color: $color-teal-2;
+  }
+
+  &.radius {
+    border-radius: 28px;
+  }
+  &.success {
+    background-color: $color-purple-1;
+  }
+  &.small {
+    font-size: 15px;
+    padding: 10px 20px;
+    line-height: auto;
+  }
+}
+
+.main-body {
+  z-index: 0;
+}
