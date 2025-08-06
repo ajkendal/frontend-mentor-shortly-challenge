@@ -14,10 +14,15 @@
   h2 {
     color: $color-body;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 48px;
     letter-spacing: -1px;
     text-align: center;
+    @include sm-breakpoint {
+      font-size: 28px;
+      line-height: 48px;
+      letter-spacing: -0.7px;
+    }
   }
 
   button {
