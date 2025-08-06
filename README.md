@@ -57,7 +57,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Mobile-first workflow
 - [React](https://reactjs.org/)
 - [Vite](https://vite.dev/)
-- [Vercel](https://vercel.com/) -
+- [Vercel](https://vercel.com/)
 
 ### What I learned
 
