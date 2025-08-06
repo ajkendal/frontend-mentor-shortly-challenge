@@ -1,0 +1,122 @@
+@import './index.scss';
+
+.navigation {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+
+  .white-bg {
+    background-color: $color-body;
+    padding: 30px 0;
+  }
+
+  .desktop-nav {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    .links {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 30px;
+    }
+    .link {
+      color: $color-grey-1;
+      font-size: 15px;
+      line-height: auto;
+      letter-spacing: 0;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-purple-2;
+      }
+      img {
+        display: block;
+      }
+    }
+
+    .login-links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  .mobile-nav {
+    display: none;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+    .ham-icon {
+      cursor: pointer;
+      &:hover svg rect {
+        fill: $color-purple-2;
+      }
+    }
+  }
+  .mobile-menu {
+    display: none;
+    width: 95%;
+    margin: 0 auto;
+    background-color: $color-purple-1;
+    border-radius: 10px;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    .link {
+      margin: 15px auto;
+
+      &:hover {
+        color: $color-teal-1 !important;
+      }
+      &:first-child {
+        margin-top: 35px;
+      }
+    }
+    hr {
+      width: 90%;
+      border: 1px solid $color-grey-1;
+      opacity: 25%;
+    }
+    button {
+      width: 90%;
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+    .link {
+      color: $color-body;
+      font-size: 18px;
+      line-height: auto;
+      letter-spacing: 0;
+      text-decoration: none;
+      padding: 10px auto;
+      font-weight: 500;
+
+      &:hover {
+        color: $color-purple-2;
+      }
+    }
+  }
+
+  @include sm-breakpoint {
+    .desktop-nav {
+      display: none;
+    }
+    .mobile-nav {
+      display: flex;
+    }
+    .mobile-menu {
+      display: flex;
+    }
+  }
+}

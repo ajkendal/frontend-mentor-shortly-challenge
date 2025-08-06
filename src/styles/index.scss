@@ -77,4 +77,13 @@ button {
   &.success {
     background-color: $color-purple-1;
   }
+  &.small {
+    font-size: 15px;
+    padding: 10px 20px;
+    line-height: auto;
+  }
+}
+
+.main-body {
+  z-index: 0;
 }

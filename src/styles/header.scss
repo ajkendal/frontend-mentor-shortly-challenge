@@ -6,10 +6,10 @@
 
 .container {
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 110px auto 50px auto;
   width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   gap: 50px;
@@ -17,6 +17,7 @@
   @include sm-breakpoint {
     flex-direction: column-reverse;
     gap: 50px;
+    margin-top: 100px;
   }
 }
 
@@ -56,5 +57,13 @@
 
   button {
     margin: 25px 0;
+  }
+}
+
+.image img {
+  @include sm-breakpoint {
+    width: 130%;
+    display: block;
+    margin: 0 auto;
   }
 }
