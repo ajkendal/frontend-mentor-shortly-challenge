@@ -1,0 +1,60 @@
+@import './index.scss';
+
+.header {
+  background-color: $color-body;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+
+  @include sm-breakpoint {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+}
+
+.item {
+  flex-basis: 50%;
+  min-width: 50%;
+  @include sm-breakpoint {
+    flex-basis: 100%;
+  }
+}
+
+.header-text {
+  h1 {
+    color: $color-footer;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 90px;
+    margin: 0;
+  }
+  p {
+    color: $color-grey-1;
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    margin: 0;
+  }
+
+  @include sm-breakpoint {
+    text-align: center;
+    h1 {
+      font-size: 42px;
+      line-height: 48px;
+      letter-spacing: -1.05px;
+    }
+  }
+
+  button {
+    margin: 25px 0;
+  }
+}

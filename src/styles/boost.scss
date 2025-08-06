@@ -10,18 +10,18 @@
   @include sm-breakpoint {
     background-image: url('/static/images/bg-boost-mobile.svg');
   }
-}
 
-h2 {
-  color: $color-body;
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 48px;
-  letter-spacing: -1px;
-  text-align: center;
-}
+  h2 {
+    color: $color-body;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
 
-button {
-  display: block;
-  margin: 0 auto;
+  button {
+    display: block;
+    margin: 0 auto;
+  }
 }

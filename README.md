@@ -55,8 +55,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Vite](https://vite.dev/) - Frontend Build Tool
+- [React](https://reactjs.org/)
+- [Vite](https://vite.dev/)
+- [Vercel](https://vercel.com/) -
 
 ### What I learned
 

@@ -53,6 +53,7 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background-color: $color-body;
+  overflow-x: hidden;
 }
 
 button {
@@ -60,11 +61,10 @@ button {
   background-color: $color-teal-1;
   color: $color-body;
   border: none;
-  padding: 10px 20px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 15px 30px;
   letter-spacing: 0;
   line-height: auto;
   &:hover {
