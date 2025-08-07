@@ -2,13 +2,15 @@
 
 // Colors
 $color-body: #ffffff;
-$color-footer: #34313d;
+$color-footer: #232127;
+$color-dark-purple: #34313d;
 $color-purple-1: #3a3054;
 $color-purple-2: #4b3f6b;
 $color-grey-1: #9e9aa8;
 $color-grey-2: #eff1f7;
 $color-teal-1: #2bd0d0;
 $color-teal-2: #9ae3e3;
+$color-error-red: #f46363;
 
 // Breakpoints
 $xsBreakpoint: 576px;
@@ -55,6 +57,9 @@ body {
   background-color: $color-body;
   overflow-x: hidden;
 }
+.main-body {
+  z-index: 0;
+}
 
 button {
   cursor: pointer;
@@ -82,8 +87,4 @@ button {
     padding: 10px 20px;
     line-height: auto;
   }
-}
-
-.main-body {
-  z-index: 0;
 }
