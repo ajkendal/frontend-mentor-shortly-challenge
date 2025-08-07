@@ -1,1 +1,153 @@
+@import './index.scss';
 
+.shorten-api {
+  background: linear-gradient(0deg, $color-grey-2 50%, $color-body 50%);
+}
+
+.form-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: $color-purple-1;
+  border-radius: 10px;
+  padding: 40px 0;
+  background-image: url('/static/images/bg-shorten-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include sm-breakpoint {
+    flex-direction: column;
+    button {
+      margin-top: 20px;
+      width: 85%;
+    }
+  }
+
+  .input-container {
+    position: relative;
+    width: 80%;
+    p {
+      position: absolute;
+      margin: 5px 0 0 0;
+      color: $color-error-red;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.11px;
+      font-style: italic;
+    }
+    @include sm-breakpoint {
+      width: 85%;
+    }
+  }
+
+  input[type='text'] {
+    width: 95%;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    border: none;
+    &::placeholder {
+      color: $color-grey-1;
+      font-size: 20px;
+      line-height: 36px;
+      letter-spacing: 0.15px;
+    }
+    &:focus {
+      outline: $color-teal-1 1px solid;
+    }
+    &.error {
+      padding: 6px 20px;
+      border: 1px $color-error-red solid;
+      &::placeholder {
+        color: $color-error-red;
+      }
+      &:focus {
+        outline: $color-error-red 1px solid;
+      }
+    }
+    @include sm-breakpoint {
+      width: 90%;
+    }
+  }
+}
+
+.shortened-list-results {
+  background-color: $color-grey-2;
+  padding: 20px 0;
+}
+
+.shortened-list-item {
+  max-width: 1200px;
+  margin: 20px auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  border-radius: 10px;
+  background-color: $color-body;
+  padding: 5px 0;
+
+  p {
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+  }
+  button {
+    margin-right: 20px;
+
+    &.copied {
+      background-color: $color-purple-1;
+    }
+  }
+  .original-url {
+    margin-left: 20px;
+    flex-basis: 67%;
+    color: $color-dark-purple;
+  }
+  .shortened-url {
+    text-align: right;
+    flex-basis: 20%;
+    color: $color-teal-1;
+  }
+  hr {
+    display: none;
+  }
+
+  @include sm-breakpoint {
+    flex-direction: column;
+    padding: 10px 0;
+    hr {
+      display: flex;
+      border: 1px solid $color-grey-1;
+      opacity: 0.25;
+      width: 100%;
+    }
+    button {
+      width: 90%;
+      margin: 10px 0;
+    }
+    p {
+      font-size: 16px;
+      letter-spacing: 0.12px;
+      margin: 0;
+    }
+    .original-url {
+      width: 90%;
+      margin-left: 0;
+    }
+    .shortened-url {
+      width: 90%;
+      text-align: left;
+    }
+  }
+}
