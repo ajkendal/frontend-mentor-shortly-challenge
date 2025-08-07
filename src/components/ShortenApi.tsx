@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 const ShortenApi = () => {
   const [currentUrl, setCurrentUrl] = useState<string>('');
-  const [shortenedUrl, setShortenedUrl] = useState<string>('');
+
   const [shortenedError, setShortenedError] = useState(false);
   type ShortenedItem = {
     original: string;
@@ -32,10 +32,8 @@ const ShortenApi = () => {
       setShortenedError(true);
     } else if (isValidUrl()) {
       setShortenedError(false);
-
       ApiCall(currentUrl)
         .then((response) => {
-          setShortenedUrl(response);
           setShortenedListObject((prevList) => [
             ...prevList,
             { original: currentUrl, shortened: response, buttonText: 'Copy' },
