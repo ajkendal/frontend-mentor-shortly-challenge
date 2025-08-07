@@ -45,6 +45,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Solution URL: [GitHub](https://github.com/ajkendal/frontend-mentor-shortly-challenge)
 - Live Site URL: [Shortly Challenge](https://frontend-mentor-shortly-challenge.vercel.app/)
+- Submission Reflection: [Frontend Mentor](https://www.frontendmentor.io/solutions/shortly-responsive-url-shortening-web-app-5yosx-vvJ-)
 
 ## My process
 
