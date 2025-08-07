@@ -56,6 +56,9 @@ body {
   background-color: $color-body;
   overflow-x: hidden;
 }
+.main-body {
+  z-index: 0;
+}
 
 button {
   cursor: pointer;
@@ -83,8 +86,4 @@ button {
     padding: 10px 20px;
     line-height: auto;
   }
-}
-
-.main-body {
-  z-index: 0;
 }
